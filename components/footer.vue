@@ -17,14 +17,14 @@
       <div
         class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400 justify-between"
       >
-        <div class="flex items-center justify-center pt-6 lg:pt-0">
+        <div class="text-center pt-6 lg:pt-0 text-sm">
           Copyright © 2023 Kurajin Kreasi Mandiri
         </div>
 
-        <div class="flex items-center justify-center pt-6 lg:pt-0">
-          <p>
+        <div class="pt-6 lg:pt-0 text-sm text-center">
+          
             Jl. Pulau Singkep LK2 Gg. Masjid Al-Hamdan Rupi - Bandar Lampung
-          </p>
+          
         </div>
       </div>
     </div>

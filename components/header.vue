@@ -1,8 +1,8 @@
 <template>
-  <header class="p-4 dark:text-gray-100 relative lg:static" :class="background ?? 'bg-gray-800'">
+  <header class="p-4 text-gray-100 relative lg:static" :class="background ?? 'bg-gray-800'">
     <div class="container flex justify-between h-16 mx-auto">
-      <NuxtLink
-        to="/"
+      <a
+        href="/"
         aria-label="Back to homepage"
         class="flex items-center p-2"
       >
@@ -18,28 +18,26 @@
             style="fill: #fff; stroke-width: 0.0380153"
           />
         </svg>
-      </NuxtLink>
+      </a>
 
       <ul
         class="absolute left-0 mt-16 w-full p-4 space-y-3 bg-gray-500 lg:bg-transparent lg:static lg:w-auto lg:left-auto lg:bottom-auto lg:mt-0 lg:space-y-0 lg:bg-none lg:items-stretch lg:space-x-3 lg:flex"
         :class="isOpen ? '' : 'hidden'"
       >
         <li class="flex">
-          <NuxtLink
-            to="/"
-            class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-gray-50 dark:border-blue-400 text-xl"
-            >Home</NuxtLink
+          <a
+            href="/"
+            class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-gray-50 border-blue-400 text-xl"
+            >Home</a
           >
         </li>
         <li class="flex">
-          <NuxtLink
-            to="/about"
-            class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-gray-50 dark:border-blue-400 text-xl"
-            >About</NuxtLink
-          >
+          <a
+            href="/about"
+            class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-gray-50 border-blue-400 text-xl"
+            >About</a>
         </li>
       </ul>
-      <ClientOnly>
       <button class="p-4 lg:hidden" @click="isOpen = !isOpen">
         <svg
           v-show="!isOpen"
@@ -47,7 +45,7 @@
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          class="w-6 h-6 dark:text-gray-100"
+          class="w-6 h-6 text-gray-100"
         >
           <path
             stroke-linecap="round"
@@ -67,7 +65,7 @@
           />
         </svg>
       </button>
-      </ClientOnly>
+
     </div>
   </header>
 </template>

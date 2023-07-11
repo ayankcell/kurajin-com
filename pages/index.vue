@@ -8,11 +8,11 @@
           class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900"
         >
           <h1
-            class="text-5xl font-bold leadi sm:text-6xl xl:max-w-3xl dark:text-gray-100"
+            class="text-5xl font-bold leadi sm:text-6xl xl:max-w-3xl text-gray-100"
           >
             Naik Kelas Dengan Digital
           </h1>
-          <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-100">
+          <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-100">
             Mitra tumbuh bersama, bangkit dan berkembang dengan digital
           </p>
         </div>

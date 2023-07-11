@@ -2,16 +2,16 @@
     <div>
         <Header />
         <section>
-      <div class="dark:bg-gray-800">
+      <div class="bg-gray-800">
         <div
-          class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 dark:text-gray-900"
+          class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900"
         >
           <h1
-            class="text-5xl font-bold sm:text-6xl xl:max-w-3xl dark:text-gray-100"
+            class="text-5xl font-bold sm:text-6xl xl:max-w-3xl text-gray-100"
           >
             {{data.title}}
           </h1>
-          <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl dark:text-gray-100">
+          <p class="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-100">
             {{data.subtitle}}
           </p>
         </div>
