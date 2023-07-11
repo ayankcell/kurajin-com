@@ -1,8 +1,8 @@
 <template>
   <header class="p-4 text-gray-100 relative lg:static" :class="background ?? 'bg-gray-800'">
     <div class="container flex justify-between h-16 mx-auto">
-      <a
-        href="/"
+      <NuxtLink
+        to="/"
         aria-label="Back to homepage"
         class="flex items-center p-2"
       >
@@ -18,24 +18,24 @@
             style="fill: #fff; stroke-width: 0.0380153"
           />
         </svg>
-      </a>
+      </NuxtLink>
 
       <ul
         class="absolute left-0 mt-16 w-full p-4 space-y-3 bg-gray-500 lg:bg-transparent lg:static lg:w-auto lg:left-auto lg:bottom-auto lg:mt-0 lg:space-y-0 lg:bg-none lg:items-stretch lg:space-x-3 lg:flex"
         :class="isOpen ? '' : 'hidden'"
       >
         <li class="flex">
-          <a
-            href="/"
+          <NuxtLink
+            to="/"
             class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-gray-50 border-blue-400 text-xl"
-            >Home</a
+            >Home</NuxtLink
           >
         </li>
         <li class="flex">
-          <a
-            href="/about"
+          <NuxtLink
+            to="/about"
             class="flex items-center px-4 -mb-1 border-b-2 border-transparent text-gray-50 border-blue-400 text-xl"
-            >About</a>
+            >About</NuxtLink>
         </li>
       </ul>
       <button class="p-4 lg:hidden" @click="isOpen = !isOpen">
