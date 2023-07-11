@@ -39,6 +39,7 @@
           >
         </li>
       </ul>
+      <ClientOnly>
       <button class="p-4 lg:hidden" @click="isOpen = !isOpen">
         <svg
           v-show="!isOpen"
@@ -66,6 +67,7 @@
           />
         </svg>
       </button>
+      </ClientOnly>
     </div>
   </header>
 </template>
