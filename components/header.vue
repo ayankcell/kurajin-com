@@ -41,7 +41,7 @@
       </ul>
       <button class="p-4 lg:hidden" @click="isOpen = !isOpen">
         <svg
-          v-if="!isOpen"
+          v-show="!isOpen"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -56,7 +56,7 @@
           ></path>
         </svg>
         <svg
-          v-else
+          v-show="isOpen"
           class="w-6 h-6 fill-gray-100"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
