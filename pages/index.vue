@@ -87,7 +87,7 @@
 
     <!-- peta indonesia -->
     <section class="flex w-full justify-center p-8">
-      <nuxt-img src="/img/peta-indonesia.jpg" format="webp" alt="peta Indonesia"/>
+      <nuxt-img src="/img/peta-indonesia.jpg" format="webp" alt="peta Indonesia" width="800" height="297" quality="80"/>
     </section>
 
     <!-- mitra berkembang -->
