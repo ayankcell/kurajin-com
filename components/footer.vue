@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <section class="bg-sky-500 text-white">
+    <section class="bg-sky-500 text-black">
       <div
         class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl"
       >
@@ -13,7 +13,7 @@
     </section>
 
     <!-- footer -->
-    <div class="bg-sky-500 text-white border-t-2 border-gray-50">
+    <div class="bg-sky-500 text-black border-t-2 border-gray-50">
       <div
         class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-400 justify-between"
       >

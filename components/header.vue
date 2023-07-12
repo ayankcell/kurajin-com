@@ -38,7 +38,7 @@
             >About</NuxtLink>
         </li>
       </ul>
-      <button class="p-4 lg:hidden" @click="isOpen = !isOpen">
+      <button class="p-4 lg:hidden" @click="isOpen = !isOpen" id="btn-nav" aria-label="tombol menu">
         <svg
           v-show="!isOpen"
           xmlns="http://www.w3.org/2000/svg"

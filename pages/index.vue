@@ -96,7 +96,7 @@
         class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl"
       >
         <h3 class="text-2xl font-bold sm:text-4xl">Mitra Berkembang</h3>
-        <a href="https://www.sadiskon.com">
+        <a href="https://www.sadiskon.com" aria-label="link ke Sadiskon.com">
           <svg
             width="179"
             height="100"
