@@ -2,8 +2,6 @@
 const route = useRoute()
 const slug = route.params.landingpage;
 
-console.log(slug)
-
 // const {data} = await useAsyncData('page', () => queryContent(slug).findOne())
 
 // useSeoMeta({
