@@ -11,5 +11,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/content'
   ],
-  ssr: true
+  image:{
+    quality:80,
+
+  },
+  experimental:{
+    payloadExtraction: false
+  }
 })
