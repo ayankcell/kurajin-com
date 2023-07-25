@@ -2,7 +2,8 @@
   <div>
     <!-- hero -->
     <section>
-      <div class="bg-no-repeat bg-cover bg-center bg-blend-overlay bg-gray-800"  :style="`background-image:url('${heroBg}')`">
+      <!-- <div class="bg-no-repeat bg-cover bg-center bg-blend-overlay bg-gray-800"  :style="`background-image:url('${heroBg}')`"> -->
+        <div class="bg-gradient-to-r from-sky-500 to-pink-700 text-gray-50">
       <Header background="bg-transparent"/>
         <div
           class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900"
@@ -116,8 +117,8 @@
 </template>
 
 <script setup>
-const img = useImage()
-const heroBg = img('/img/ld2.jpg',{format: 'webp', quality:60})
+// const img = useImage()
+// const heroBg = img('/img/ld2.jpg',{format: 'webp', quality:60})
 useSeoMeta({
   title: 'Kurajin Kreasi Mandiri - Mitra Tumbuh Bersama Dengan Digital',
   ogTitle: 'Kurajin Kreasi Mandiri - Mitra Tumbuh Bersama Dengan Digital',
