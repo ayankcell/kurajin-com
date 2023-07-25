@@ -7,7 +7,7 @@
           class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900"
         >
           <h1
-            class="text-5xl font-bold sm:text-6xl xl:max-w-3xl text-gray-100"
+            class="text-3xl font-bold sm:text-6xl xl:max-w-3xl text-gray-100"
           >
             {{data.title}}
           </h1>

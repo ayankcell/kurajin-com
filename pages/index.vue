@@ -2,13 +2,13 @@
   <div>
     <!-- hero -->
     <section>
-      <div class="bg-[url('/img/ld2.jpg')] bg-no-repeat bg-cover bg-center bg-blend-overlay bg-gray-800">
+      <div class="bg-no-repeat bg-cover bg-center bg-blend-overlay bg-gray-800"  :style="`background-image:url('${heroBg}')`">
       <Header background="bg-transparent"/>
         <div
           class="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900"
         >
           <h1
-            class="text-5xl font-bold leadi sm:text-6xl xl:max-w-3xl text-gray-100"
+            class="text-3xl font-bold leadi sm:text-6xl xl:max-w-3xl text-gray-100"
           >
             Naik Kelas Dengan Digital
           </h1>
@@ -55,15 +55,11 @@
         <div
           class="max-w-xs p-6 rounded-md shadow-md bg-white bg-opacity-50 flex flex-col items-center justify-center"
         >
-          <svg viewBox="0 0 640 512" class="w-12 h-12">
-            <path
-              d="M496 224C416.4 224 352 288.4 352 368s64.38 144 144 144s144-64.38 144-144S575.6 224 496 224zM544 384h-54.25C484.4 384 480 379.6 480 374.3V304C480 295.2 487.2 288 496 288C504.8 288 512 295.2 512 304V352h32c8.838 0 16 7.162 16 16C560 376.8 552.8 384 544 384zM320.1 352H208C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h312.2C335.1 449.6 320 410.5 320 368C320 362.6 320.5 357.3 320.1 352zM496 192c5.402 0 10.72 .3301 16 .8066V144C512 118.4 489.6 96 464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h360.2C392.5 216.9 441.3 192 496 192zM336 96h-160V48h160V96z"
-            ></path>
-          </svg>
+          <svg viewBox="0 0 16 16" class="w-12 h-12"><g><path d="M6.834.33a2.25 2.25 0 0 1 2.332 0l5.25 3.182A2.25 2.25 0 0 1 15.5 5.436V6A.75.75 0 0 1 14 6v-.564a.75.75 0 0 0-.361-.642l-5.25-3.181a.75.75 0 0 0-.778 0l-5.25 3.181A.75.75 0 0 0 2 5.436v5.128a.75.75 0 0 0 .361.642l4.028 2.44a.75.75 0 1 1-.778 1.283l-4.027-2.44A2.25 2.25 0 0 1 .5 10.563V5.436a2.25 2.25 0 0 1 1.084-1.924L6.834.33z"/><path fill-rule="evenodd" d="m11.749 7.325.001-.042v-.286a.75.75 0 0 0-1.5 0v.286l.001.042a3.73 3.73 0 0 0-1.318.546.76.76 0 0 0-.03-.03l-.201-.203a.75.75 0 0 0-1.06 1.06l.201.203.03.028c-.26.394-.45.84-.547 1.319a.878.878 0 0 0-.04-.001H7a.75.75 0 0 0 0 1.5h.286l.038-.001c.097.48.286.926.547 1.32a.71.71 0 0 0-.028.027l-.202.202a.75.75 0 0 0 1.06 1.06l.203-.202a.695.695 0 0 0 .025-.026c.395.261.842.45 1.322.548l-.001.036v.286a.75.75 0 0 0 1.5 0v-.322c.48-.097.926-.287 1.32-.548l.026.026.202.203a.75.75 0 0 0 1.06-1.061l-.201-.202a.667.667 0 0 0-.028-.026c.261-.395.45-.842.547-1.321H15a.75.75 0 0 0 0-1.5h-.286l-.04.002a3.734 3.734 0 0 0-.547-1.319l.03-.028.202-.202a.75.75 0 0 0-1.06-1.061l-.203.202-.029.03a3.73 3.73 0 0 0-1.318-.545zM11 8.75A2.247 2.247 0 0 0 8.75 11 2.247 2.247 0 0 0 11 13.25 2.247 2.247 0 0 0 13.25 11 2.247 2.247 0 0 0 11 8.75z" clip-rule="evenodd"/></g></svg>
           <div class="mt-6 mb-2">
-            <h2 class="text-xl font-semibold tracki">Website Gratis UMKM</h2>
+            <h2 class="text-xl font-semibold tracki">Jasa Online</h2>
           </div>
-          <p>Kami desainkan website untuk anda. Anda tinggal cari hostingnya</p>
+          <p>Pembuatan Landing Page, Optimasi PageSpeed, Kelola VPS</p>
         </div>
 
         <!-- card icon -->
@@ -120,6 +116,8 @@
 </template>
 
 <script setup>
+const img = useImage()
+const heroBg = img('/img/ld2.jpg',{format: 'webp', quality:60})
 useSeoMeta({
   title: 'Kurajin Kreasi Mandiri - Mitra Tumbuh Bersama Dengan Digital',
   ogTitle: 'Kurajin Kreasi Mandiri - Mitra Tumbuh Bersama Dengan Digital',
