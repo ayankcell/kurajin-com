@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // devtools: { enabled: true },
-  head:{
-    htmlAttrs:{
-      lang: "id"
-    }
+  devtools: { enabled: true },
+  app:{
+    head:{
+      htmlAttrs:{
+        lang: "id"
+      }
+    },
   },
   modules: [
     '@nuxt/image',
